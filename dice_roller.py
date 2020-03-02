@@ -13,6 +13,11 @@ def main():
     else:
       print(f'You\'ve rolled a {roll}')
   print(f'You\'ve rolled a total of {dice_sum}')
+  user=str(input('Would you like to play again? '))
+  if user=='yes':
+    main()
+  else:
+    print('Thank you for playing')
 
 if __name__== "__main__":
   main()
